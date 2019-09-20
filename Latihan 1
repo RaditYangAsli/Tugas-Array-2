@@ -1,0 +1,26 @@
+package array2;
+
+import java.util.Scanner;
+
+public class LathianArray1 {
+    public static void main(String[] args) {
+        String cari;
+        boolean found = false;
+        String[] data = new String[]{"Rafi","Billy","Radit","Aji"};
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukan data yang ingin dicari");
+        cari = input.nextLine();
+        for (int i = 0; i < data.length; i++){
+            if (cari.equals(data[i])){
+                found = true;
+                break;
+            }
+        }
+        
+        if(found == true){
+            System.out.println("Data ditemukan!");
+        } else {
+            System.out.println("Data tidak ditemukan!");
+        }
+    }
+}
